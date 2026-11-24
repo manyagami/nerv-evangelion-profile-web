@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NERV JAPAN — Special Agency</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Global Crimson Poster + Subtle Grid Backdrop -->
+  <div class="bg-poster-canvas" aria-hidden="true"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <a href="#home" class="brand-logo" aria-label="NERV Japan Home">
+      <img
+        src="nerv.png"
+        onerror="this.onerror=null;this.src='nerv.jpg';"
+        alt="NERV Japan Logo"
+      />
+    </a>
+
+    <nav class="glass-nav" aria-label="Primary Navigation">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#eva" class="nav-link">Eva</a></li>
+        <li><a href="#member" class="nav-link">Member</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#social-media" class="nav-link">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         HERO SECTION (#home)
+    ========================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-kicker reveal-item">SPECIAL AGENCY // TOKYO-3</p>
+          <h1 class="hero-title reveal-item">NERV JAPAN</h1>
+          <div class="hero-divider reveal-item"></div>
+          <p class="hero-subtitle reveal-item">
+            &ldquo;God's in his heaven, all's right with the world&rdquo;
+          </p>
+          <div class="hero-actions reveal-item">
+            <a href="#eva" class="glass-btn">Inspect Evangelion Units</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rei Ayanami visual raised slightly higher -->
+      <div class="hero-silhouette-wrap" aria-hidden="true">
+        <img
+          src="home.png"
+          onerror="this.onerror=null;this.src='home.jpg';"
+          alt="Evangelion Hero Visual"
+          class="hero-silhouette"
+        />
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EVANGELION UNITS SHOWCASE (#eva) — UNIT-01 FIRST
+    ========================================================== -->
+    <section id="eva" class="section-block eva-section" data-unit="unit01">
+      <div class="eva-ambient-glow" id="eva-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">01 // WEAPONS DIVISION</span>
+          <h2 class="section-title">EVANGELION UNITS</h2>
+
+          <div class="unit-tabs" role="tablist" aria-label="Select Evangelion Unit">
+            <button class="glass-pill-tab active" role="tab" aria-selected="true" data-unit="unit01">
+              UNIT-01
+            </button>
+            <button class="glass-pill-tab" role="tab" aria-selected="false" data-unit="unit00">
+              UNIT-00
+            </button>
+            <button class="glass-pill-tab" role="tab" aria-selected="false" data-unit="unit02">
+              UNIT-02
+            </button>
+          </div>
+        </div>
+
+        <div class="eva-grid">
+          <!-- Left: Glassmorphism Spec Card (UNIT-01 Default) -->
+          <article class="glass-card eva-spec-card" id="eva-spec-card">
+            <div class="spec-header">
+              <span class="spec-designation" id="eva-designation">TEST TYPE</span>
+              <h3 class="spec-name" id="eva-name">EVA UNIT-01</h3>
+            </div>
+
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>Designated Pilot</dt>
+                <dd id="eva-pilot">Shinji Ikari</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Color Scheme</dt>
+                <dd id="eva-color">Deep Violet &amp; Neon Green</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Primary Armaments</dt>
+                <dd id="eva-armaments">Progressive Knife, Positron Sniper Rifle, Gatling Gun</dd>
+              </div>
+            </dl>
+
+            <div class="spec-lore-block">
+              <span class="spec-lore-label">Tactical Dossier</span>
+              <p class="spec-lore" id="eva-lore">
+                Created as the sole Evangelion cloned directly from Lilith, Unit-01 houses the soul of Yui Ikari. Known for exceeding standard synchronization parameters and entering autonomous Berserk states during critical Angel encounters.
+              </p>
+            </div>
+          </article>
+
+          <!-- Right: Clean 360° 3D Evangelion Viewer (No Bottom HUD Bar) -->
+          <div class="glass-card eva-viewer-card">
+            <div class="viewer-stage" id="eva-3d-container">
+              <iframe
+                id="eva-sketchfab-frame"
+                title="Evangelion 3D Model Viewer"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                src="https://sketchfab.com/models/ef7aaaeecb5042eab2d5b7b0059980c5/embed?autostart=1&autospin=0.35&preload=1&transparent=1&ui_theme=dark&ui_infos=0&ui_watermark=0&ui_help=0&ui_settings=0&ui_inspector=0&ui_annotations=0&ui_stop=0&ui_vr=0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         NERV PERSONNEL / MEMBER SECTION (#member)
+    ========================================================== -->
+    <section id="member" class="section-block member-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">02 // PERSONNEL REGISTRY</span>
+          <h2 class="section-title">MEMBER</h2>
+
+          <div class="member-filters" role="tablist" aria-label="Filter NERV Personnel">
+            <button class="glass-pill-tab active" data-category="All" role="tab" aria-selected="true">
+              All
+            </button>
+            <button class="glass-pill-tab" data-category="Command & Bridge Crew" role="tab" aria-selected="false">
+              Command &amp; Bridge Crew
+            </button>
+            <button class="glass-pill-tab" data-category="Special Operations & Intelligence" role="tab" aria-selected="false">
+              Special Operations &amp; Intelligence
+            </button>
+            <button class="glass-pill-tab" data-category="Evangelion Pilots" role="tab" aria-selected="false">
+              Evangelion Pilots
+            </button>
+          </div>
+        </div>
+
+        <div class="member-list" id="member-list"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT NERV JAPAN (#about)
+    ========================================================== -->
+    <section id="about" class="section-block about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">03 // ORGANIZATIONAL DOSSIER</span>
+          <h2 class="section-title">ABOUT NERV JAPAN</h2>
+        </div>
+
+        <div class="glass-card about-main-card">
+          <div class="about-grid">
+            <article class="about-column">
+              <h3>Origins (GEHIRN to NERV)</h3>
+              <p>
+                Established in 2010 as the direct successor to the artificial evolution research institute GEHIRN following the cataclysmic Second Impact in 2000. Its dissolution and restructuring concentrated mankind's most advanced biomechanical engineering under unified executive command.
+              </p>
+            </article>
+
+            <article class="about-column">
+              <h3>Headquarters (Tokyo-3 &amp; GeoFront)</h3>
+              <p>
+                Anchored deep beneath the fortified city of Tokyo-3 inside the vast subterranean GeoFront cavern in Hakone, Kanagawa Prefecture, Japan. The inverted pyramid complex houses command bridges, Evangelion cages, and the MAGI computational core.
+              </p>
+            </article>
+
+            <article class="about-column">
+              <h3>Core Mandate</h3>
+              <p>
+                Operating as a special paramilitary agency under the United Nations while secretly directed by SEELE, NERV is tasked with deploying Evangelion units to intercept and neutralize Angels while covertly overseeing the Human Instrumentality Project.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="milestone-grid">
+          <div class="glass-card milestone-card">
+            <span class="milestone-tag">ORIGIN</span>
+            <p class="milestone-title">2010 — Founded from GEHIRN</p>
+          </div>
+          <div class="glass-card milestone-card">
+            <span class="milestone-tag">FACILITY</span>
+            <p class="milestone-title">HQ — Tokyo-3 GeoFront, Japan</p>
+          </div>
+          <div class="glass-card milestone-card">
+            <span class="milestone-tag">ARCHITECTURE</span>
+            <p class="milestone-title">Core System — MAGI Supercomputers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SOCIAL MEDIA & FOOTER (#social-media)
+    ========================================================== -->
+    <section id="social-media" class="section-block social-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">04 // EXTERNAL CHANNELS</span>
+          <h2 class="section-title">SOCIAL MEDIA</h2>
+        </div>
+
+        <div class="social-grid">
+          <a
+            href="https://www.instagram.com/mandarwishhhh"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-card social-card"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <div class="social-meta">
+              <span class="social-platform">Instagram</span>
+              <span class="social-handle">@mandarwishhhh</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@surrenderbythem"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-card social-card"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+            <div class="social-meta">
+              <span class="social-platform">TikTok</span>
+              <span class="social-handle">@surrenderbythem</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/manyagami"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-card social-card"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <div class="social-meta">
+              <span class="social-platform">GitHub</span>
+              <span class="social-handle">manyagami</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-motto">&ldquo;God's in his heaven, all's right with the world.&rdquo;</p>
+      <p class="footer-copy">&copy; 2026 xianabsolute. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
